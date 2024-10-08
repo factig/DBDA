@@ -1,0 +1,216 @@
+1.
+
+s=int(input("Enter a number : "))
+s=str(s)
+rs=''
+cou=-1
+for j in str(s):
+  rs = rs + s[cou]
+  cou=cou-1
+
+2.
+
+s=int(input("Enter a number : "))
+cou=0
+for i in str(s):
+    cou=cou+int(i)
+print(cou)
+
+3.
+
+s=int(input("Enter a number : "))
+cou=0
+print(len(str(s)))
+
+4.
+
+s=input("Enter a number : ")
+rs=''
+cou=-1
+for j in s:
+  rs = rs + s[cou]
+  cou=cou-1
+print(rs==str(s))
+
+5.
+
+s=int(input("Enter a number : "))
+for i in range(1, s//2 + 1):
+    if s%i==0:
+        print(i)
+
+6.
+
+s=int(input("Enter a number : "))
+for i in range(1,11):
+    print(s,'*',i,'=',s*i)
+
+7.
+
+cou=0
+for i in range(1,11):
+    cou=cou+i
+print(cou)
+
+8.
+
+9.
+
+10.
+
+s=input("Enter a string: ")
+for i in s:
+    print(i)
+
+11.
+
+a=int(input('Enter starting range : '))
+b=int(input('Enter ending range: '))
+for i in range(a,b+1):
+    if i%2==1:
+        print(i)
+
+12.
+
+s=input("Enter a string: ")
+print(s[::-1])
+
+13.
+
+s=int(input("Enter a number: "))
+cou=1
+for i in range(1,s+1):
+    cou=cou*i
+print(cou)
+
+14.
+
+for i in range(1,8):
+    print(7*i)
+print(cou)
+
+15.
+
+a.
+
+for i in range(1,6):
+    print('*'*i)
+
+b.
+
+for i in range(6,1,-1):
+
+c.
+
+for i in range(1,6):
+    print(i*str(i))
+
+d.
+
+
+
+e.
+
+
+
+f.
+
+
+
+16.
+
+for i in range(-10,0):
+    print(i)
+
+17.
+
+for i in range(-10,0):
+    print(i)
+else:
+    print('Done')
+
+18.
+
+import math
+for i in range(25,95):
+    cou=0
+    for j in range(2,int(math.sqrt(i))+1):
+        if i%j==0:
+            cou=1
+            if cou==1:
+                break 
+    if cou==0:
+        print(i)
+    
+            
+19.
+
+n=int(input('enter a number :'))
+for i in range(n+1):
+    print(i**3)
+
+20.
+
+n=int(input('enter a number :'))
+s=''
+cou=0
+for i in range(n):
+    s=s+str(n)
+    cou=cou+int(s)
+print(cou)
+
+21.
+
+a.
+
+arr=[]
+cou=0
+while len(arr)<11:
+    if cou%2==0:
+        arr.append(cou)
+    cou=cou+1
+print(arr)
+
+b.
+
+arr=[]
+cou=0
+while len(arr)<11:
+    if cou%2==1:
+        arr.append(cou)
+    cou=cou+1
+print(arr)
+
+c.
+
+import math
+arr = []
+cou = 3
+while len(arr) < 10:
+    k = 0
+    for i in range(2, int(math.sqrt(cou)) + 1):
+        if cou % i == 0:
+            k = 1
+            break
+    if k == 0:
+        arr.append(cou)
+    cou += 1
+print(arr)
+
+d.
+
+arr = []
+cou = 1
+while len(arr) < 3:
+    div=[]
+    for i in range(1,cou):
+        if cou%i==0:
+            div.append(i)
+    if sum(div)==cou:
+        arr.append(cou)
+    else:
+        div.clear()
+    cou=cou+1
+print(arr)
+
+

@@ -1,0 +1,228 @@
+1.
+
+s='abcdabc'
+print(s.replace('a','$'))
+
+2.
+
+s='hello'
+print(s.replace('s[index]',''))
+
+3.
+
+s=input('Enter a string : ')
+s=s.lower()
+vow='aeiou'
+cou=0
+for i in s:
+    if i in vow:
+        cou=cou+1
+print(cou)
+
+4.
+
+s=input('Enter a string : ')
+print(s.replace(' ','-'))
+
+5.
+
+s=input('Enter a string : ')
+cou=0
+for i in s :
+    cou=cou+1
+print(cou)
+
+6.
+
+
+
+7.
+
+upper='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+lower='abccdefghijklmnopqrstuvwxyz'
+l=0 
+u=0
+s=input("enter a string : ")
+for  i in s:
+    if i in upper:
+        u=u+1
+    elif i in lower:
+        u=u+1
+print('The upper case count is : ',u)
+print('The lower cases count is : ',l)
+
+# OR
+
+l=0 
+u=0
+s=input("enter a string : ")
+for i in s:
+    if i.islower():
+        l=l+1
+    elif i.isupper():
+        u=u+1
+    
+print('The upper case count is : ',u)
+print('The lower cases count is : ',l)
+
+8.
+
+s=input()
+print(s==s[::-1])
+
+9.
+
+s=input("enter a string : ")
+if len(s)<2:
+    print('empty string')
+else:
+    print(s[0]+s[1]+s[-2]+s[-1])
+
+10.
+
+s=input("enter a string : ")
+ch=input('enter characters :')
+print(s[:2]==ch)
+
+11.
+
+s=input("enter a string : ")
+vow='aeiou'
+k=len(s)
+for i in s:
+    if i in vow:
+        k=k-1
+print(k)
+
+12.
+
+
+
+13.
+a.
+
+s='AlwaysThinkPosiTive'
+print(s[5:6])
+
+b.
+
+s='AlwaysThinkPosiTive'
+print(s[10:11])
+
+c.
+
+s='AlwaysThinkPosiTive'
+print(s[5:8])
+
+d.
+
+s='AlwaysThinkPosiTive'
+print(s[8:5:-1])
+
+e.
+
+s='AlwaysThinkPosiTive'
+print(s)
+
+f.
+
+s='AlwaysThinkPosiTive'
+print(s[2:])
+
+g.
+
+s='AlwaysThinkPosiTive'
+print(s[:8])
+
+h.
+
+s='AlwaysThinkPosiTive'
+print(s[::-1])
+
+
+i.
+
+s='AlwaysThinkPosiTive'
+print(s[:-2])
+
+j.
+
+s='AlwaysThinkPosiTive'
+print(s[-6:])
+
+k.
+
+s='AlwaysThinkPosiTive'
+print(s[::2])
+
+l.
+
+s='AlwaysThinkPosiTive'
+s=s[::-1]
+print(s[::2])
+
+14.
+
+a.
+
+s='The Quick brown fox jumps over the lazy dOG'
+print(s)
+
+b.
+
+s='The Quick brown fox jumps over the lazy dOG'
+print(s.lower())
+
+c.
+
+s='The Quick brown fox jumps over the lazy dOG'
+print(s.upper())
+
+d.
+
+s='The Quick brown fox jumps over the lazy dOG'
+print(s.title())
+
+e.
+
+s='The Quick brown fox jumps over the lazy dOG'
+print(s.swapcase())
+
+f.
+
+s='The Quick brown fox jumps over the lazy dOG'
+print(s.capitalize())
+
+
+15.
+
+s=input("enter a string")
+arr=[i for i in s if i.isalpha()]
+print(len(arr))
+
+16.
+
+s=input("enter a string : ")
+arr=[int(i) for i in s if i.isdigit() ]
+print(sum(arr))
+
+17.
+
+s=input("enter a string : ")
+arr=s.split()
+for i in arr:
+    if 'a' in i.lower():
+        print(i)
+
+18.
+
+
+
+
+19.
+
+
+
+
+
+

@@ -1,0 +1,146 @@
+1.
+
+a,b,c  = map(int, input("enter 3 numbers seperated by space : ").split())
+print(a,b,c)
+print(a*b*c/b*a , a*b*c/c*b , a*b*c/a*c )
+
+2.
+
+n = int(input('enter anumber : '))
+if n>0:
+   print(n,"is positive")
+elif(n<0):
+   print(n,"is negative") 
+else:
+    print(n,'is non-negative , non-positive number')
+
+3.
+
+4.
+
+n=input('enter a number : ')
+print(int(n)+int(n+n)+int(n+n+n))
+
+5.
+
+a,b,c  = map(int, input("enter 3 numbers seperated by space : ").split())
+print(max(a,b,c))
+
+6.
+
+c=input("Enter the tempreture in celcius : )
+print((c*1.8)+32,"farenheit")
+
+7.
+
+p,t,r=map(float,input('enter the principal maount, time required and rate of interest : ').split())
+print((p*t*r)/100)
+
+8.
+
+n=float(input("enter your height in cm's : "))
+print(round(n/2.54,2),"inches ,",round(n/4.96,2),"feet")
+
+9.
+
+n=int(input("enter you age to check if you're eligible to vote or not "))
+if n>=18 :
+    print("You are eligible to vote ")
+else:
+    print("Not eligible to vote")
+
+10.
+
+n=int(input("enter a number to check if number is divisible by 7 : "))
+if n%7==0 :
+    print(n,"is divisible by 7")
+else:
+    print(n,"is not divisible by 7")
+
+11.
+
+n=int(input("enter a number : "))
+if n%5==0 :
+    print("Hello")
+else:
+    print("Bye bye Bye")
+
+12.
+
+n=int(input("enter a number : "))
+cou=0
+if n<=100:
+    print(cou)
+else:
+    n=n-100
+    if n>100:
+        cou=cou+(100*5)
+        n=n-100
+        if n>1:
+            cou=cou+(n*10)
+print(cou)
+
+
+
+13.
+
+n=int(input("enter a percentage : "))
+if n>90:
+    print('A')
+elif n>80:
+    print('B')
+elif n>=60:
+    print('C')
+else:
+    print('D')
+
+14.
+
+n=int(input("enter a percentage : "))
+if n>100000:
+    print('15%')
+elif n>50000:
+    print('10%')
+else:
+    print("5%")
+
+15.
+
+n=int(input("enter a percentage : "))
+if n%4==0 and n%100!=0:
+    if n%4==0:
+        print('is a leap year')
+else:
+    print('is not a leap year')
+
+16.
+
+n=int(input('enter a number between 1 and 7'))
+if n>7:
+    print('enter a number that is between 1 and 7')
+    
+
+if n==1:
+    print('Monday')
+elif n==2:
+    print('Tuesday')
+elif n==3:
+    print('Wednesday')
+elif n==4:
+    print('Thursday')
+elif n==5:
+    print('Friday')
+elif n==6:
+    print('Saturday')
+elif n==7:
+    print('Sunday')
+        
+17.
+
+a,b,c=map(int, input('enter a number ').split())
+if a==b==c:
+    print('Equi triangle')
+elif a==b or b==c or c==a:
+    print('Scalene traingle')
+else:
+    print('Isocles triangle')

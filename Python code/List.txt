@@ -1,0 +1,203 @@
+1.
+
+l1=[1,2,3,4,5,6,7,8,9,0]
+print(sum(l1)/len(l1))
+
+
+2.
+
+arr=[-1,-2,-3,-4,-5,-6,-7,1,2,3,4,5,6,7]
+k=True
+while k:
+    print('''
+      1. Sum of  negative numbers
+      2. Sum of positive even numbers
+      3. Sum of positive odd numbers
+      ''')
+    n=int(input('Enter a command : '))
+    if n==1:
+        cou=0
+        for i  in arr:
+            if i<0:
+                cou=cou+i
+        print(cou)
+    elif n==2:
+        cou=0
+        for i in arr:
+            if i%2==0 and i>0:
+                cou=cou+i
+        print(cou)
+    elif n==3:
+        cou=0
+        for i in arr:
+            if i%2==1 and i>0:
+                cou=cou+i
+        print(cou)                
+
+3.
+
+od=0
+ev=0
+l1=[1,2,3,4,5,6,7,8,9,10]
+l1.sort(reverse=True)
+i=0
+while od==0 or ev==0:
+    if l1[i]%2==0:
+        ev=l1[i]
+    elif l1[i]%2==1:
+        od=l1[i]
+    i=+1
+print(od,ev)
+
+
+4.
+
+weekdays=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+for i in weekdays:
+    print(i[:3])
+
+5.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+n=int(input('enter a number to check its occurences in input : '))
+print(arr.count(n))
+
+6.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+arr.sort()
+print(arr[-1])
+
+7.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+arr.sort()
+print(arr[-2])
+
+8.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+od=[]
+ev=[]
+for i in arr:
+    if i%2==0:
+        ev.append(i)
+    else:
+        od.append(i)
+print(od)
+print(ev)
+
+9.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+barr=[100,101,107,1092,19]
+print(sorted(arr+barr))
+
+10.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+arr[0],arr[-1]=arr[-1],arr[0]
+print(arr)
+
+11.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+barr=[]
+for i in arr:
+    if i not in barr:
+        barr.append(i)
+print(barr)
+        
+
+12.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+n=int(input('enter a numebr :'))
+print(arr.index(n))
+
+13.
+
+arr=[1,2,3,4,3,2,3,4,5,2,6,1,2,4,1,5,3,1,5]
+k=True
+while k:
+    print("""
+        1. add data
+        2. add data by position
+        3. delete data by value
+        4. delete data by position
+        5. sort data asc
+        6. sort  data desc
+        7. reverse data
+        8. display data
+        9. quit
+        """)
+    n=int(input("Enter a command as number "))
+    if n==1:
+        i=int(input('enter a number to add : '))
+        arr.append(i)
+        print('number added !')
+    elif n==2:
+        i=int(input('enter a number to add : '))
+        k=int(input('enter the index : '))
+        arr.insert(k,i)
+    elif n==4:
+        k=int(input('enter the index of number you want to delete : '))
+        arr.pop(k)
+    elif n==3:
+        i=int(input('enter a number to delete : '))
+        if i in arr:
+            arr.remove(i)
+        else:
+            print('invalid input')
+    elif n==5:
+        print('numbers sorted')
+    elif n==6:
+        print('numbers sorted in descending') 
+        arr.sort(reverse=True)
+    elif n==7:
+        print(arr[::-1])
+    elif n==8:
+        print(arr)
+    elif n==9:
+        k=False
+        
+    
+
+14.
+
+arr=[i**2 for i in range(11,21)]
+print(arr)
+
+15.
+
+arr=[i for i in range(1001) if i%7==0]
+print(arr)
+
+16.
+
+arr=[i for i in range(1001)]
+barr=[]
+for i in arr:
+    if '5' in str(i):
+        barr.append(i)
+print(barr)
+
+17.
+
+n=map(str, input().split())
+arr=[i[:1] for i in n]
+print(arr)
+    
+
+18.
+
+n=map(str, input().split())
+arr=[(i,len(i)) for i in n]
+print(arr)
+
+
+
+
+
+
+
