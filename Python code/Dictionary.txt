@@ -1,0 +1,101 @@
+1.
+
+d={}
+z=int(input('enter the number of inputs/key-vlue you want to insert : '))
+for i in range(z):
+        k=int(input('enter key : '))
+        v=input('enter value : ')
+        d[k]=v
+print(d)
+
+2.
+
+d1={1:'one',2:'two',3:'three'}
+d2={4:'four',5:'five'}
+d3={**d1 , **d2}
+print(d3)
+
+
+3.
+
+n=int(input('enter a number : '))
+d1={x:x**3 for x in range(1,n)}
+print(d1)
+
+4.
+
+d1={'a':5, "b":3, 'c':9}
+z=1
+for i in d1:
+    z=z*d1[i]
+print(z)
+
+5.
+
+d1={'a':5, "b":3, 'c':9}
+d1.pop('a')
+print(d1)
+
+6.
+
+d1={'name':'ramu','age':25,'state':'goa'}
+d1.pop('state')
+print(d1)
+d1.update({'location':'goa'})
+print(d1)
+
+7.
+
+d1={1:'one',2:'two',3:'three'}
+d2={4:'four',5:'five'}
+d3=zip(d1,d2)
+print(list(d3))
+
+8.
+
+d={'m':'maths','p':'python','aj':'advanced java'}
+k=True
+while k:
+    print('''
+          1. add data
+          2. delete value
+          3. show data
+          4. quit
+          ''')
+    n=int(input('enter any of command number : '))
+    if n==1:
+        k=str(input('enter data name : '))
+        v=input('enter course name : ')
+        d.update({k:v})
+        
+    elif n==2:
+        arr=input('enter the course name to delete : ')
+        del d[arr]
+    elif n==3:
+        print(d)
+    elif n==4:
+        k=False
+    else:
+        print('Invalid input')
+
+9.
+
+d={'Madhura Kale':9685968911, 'Ram kulkarni':9182748672, 'Rama Londhe':9275663829}
+d.update({'Madhura Kale':1111111111}) #Q2
+d.update({'Ankita Deshpande' : 9287467876}) #Q3
+print(d['Ram kulkarni']) #  Q4
+print(d.get('Ram Kulkarni')) #Q5
+print(d.keys()) #Q6
+print(d.values()) #Q7
+
+10.
+
+people={'Arham':'Blue','Monika':'Red','Lisa':'Yellow','Vinod':'Purple','Jenny':'Pink'}
+print(len(people.keys())) #Q1
+people.update({'Lisa':'Cyan'}) #Q2
+people.pop('Jenny') #Q3
+print(dict(sorted(people.items())) ) #Q4
+
+11.
+
+
