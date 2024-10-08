@@ -1,0 +1,80 @@
+1.
+
+s=list(map(str, input().split()))
+for i in s:
+    if len(i)%2==0:
+        print(i)
+
+2.
+
+s=['kalash','kondekar']
+# k=''
+for  i in s:
+    print("".join(i[:-1]).title() +i[-1].upper())
+
+3.
+
+s=input('Enter a string : ')
+alp=0
+num=0
+for i in s:
+    if i.isnumeric():
+        num=1
+    elif i.isalpha():
+        alp=1
+print(alp==num==1)
+    
+        
+4.
+
+s=input()
+a=[]
+for i in set(s):
+    if s.count(i)==1:
+        a.append(i)
+print(a)
+
+5.
+
+s=input()
+a=[]
+var=''
+maxx=0
+for i in s:
+    if s.count(i)>maxx:
+        var=i
+        maxx=s.count(i)
+print(var,maxx)
+       
+
+6.
+
+s=input()
+a=[]
+var=''
+for i in s:
+    if s.count(i)%2==1:
+        a.append(i)
+print(a)
+
+7.
+
+
+
+8.
+
+
+
+9.
+
+
+
+10.
+
+
+
+11.
+
+
+
+
