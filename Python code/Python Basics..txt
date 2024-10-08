@@ -1,0 +1,60 @@
+1.
+2.
+
+print('hello world')
+
+3.
+
+a=input('enter your name : ')
+print(a)
+
+4.
+
+print('hello world')
+
+5.
+
+a=input('enter your name : ')
+a
+
+6.
+
+a=10
+b=20
+
+a,b=b,a
+
+c=a
+a=b
+b=c
+
+a=a*b/a
+b=a*b/b
+
+7.
+
+b=int(input('enter a number : '))
+a=int(input('enter another number : '))
+print('add : ', a+b)
+print('subtract', a-b)
+print('mult : ',a*b)
+print('div',a/b)
+print('floor : ',a//b)
+print('power : ', a**b)
+print('modulo : ', a%b)
+
+8.
+
+import math
+a=int(input('enter the radius : '))
+print("circumference of circle is : ", math.pi * a*2)
+
+9.
+
+a,b=map(int, input('enter l and b of rectangle : ').split())
+print('area of rectangle is : ', a*b)
+
+10.
+
+a,b,c,d=map(str, input('enter name, age, city and phone number').split())
+print(a+"-"+b+"-"+c+"-"+d+"-")
